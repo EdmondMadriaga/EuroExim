@@ -22,7 +22,7 @@
             width: 100%;
             height: 100%;
             background: url('images/Logo.png') no-repeat center center/cover;
-            opacity: 0.1; /* Adjust this value for more/less transparency */
+            opacity: 0.15; /* Adjust this value for more/less transparency */
             z-index: -1;
         }   
 
@@ -196,36 +196,38 @@
             box-shadow: 0px 2px 0 #ff5757;
         }
         .container {
-            width: 100%;
+            width: 90%;
             max-width: 400px;
             margin: auto;
             padding: 20px;
         }
         .header {
-            background-color: #3b589800;
             color: #cda536;
-            padding: 15px;
-            font-size: 24px;
+            font-size: clamp(20px, 8vw, 40px);
             font-weight: bold;
-            border-radius: 0; /* Removed curved edges */
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
         }
         .image-box {
             width: 100%;
-            margin-top: 5px;
+            margin-top: 10px;
         }
         .image-box img {
             width: 100%;
+            max-width: 100%;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
         @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
+            .header {
+                flex-wrap: wrap;
+                gap: 2px;
             }
-            .image-container {
-                flex-direction: row;
-                justify-content: center;
+            .container {
+                padding: 10px;
             }
         }
     </style>
