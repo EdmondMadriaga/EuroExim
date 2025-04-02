@@ -211,7 +211,7 @@
         }
         .image-box {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .image-box img {
             width: 100%;
@@ -219,8 +219,13 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         @media (max-width: 100%) {
-            .image-box img {
-                margin-left: -10px; /* Shift images slightly left for mobile */
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container {
+                flex-direction: row;
+                justify-content: center;
             }
         }
     </style>
