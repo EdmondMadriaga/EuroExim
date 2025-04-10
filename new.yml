@@ -143,9 +143,9 @@ paths:
                 mobileNumber: "09123456789"
                 avatarDataUrl: https://randomuser.me/api/portraits/men/45.jpg
                 ids: []
-                gender: "{{GENDER}}"
-                dob: "{{DOB}}"
-                roleId: "{{ROLE_ID}}"
+                gender: "GENDER"
+                dob: "DOB"
+                roleId: "ROLE_ID"
       responses:
         "100":
           description: Successful response
